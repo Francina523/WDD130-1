@@ -293,14 +293,14 @@ main section {
     margin: 100px 0;
 }
 .canyon-img3 {
-    grid-column: 7/10;
-    grid-row: 8/10;
+    grid-column: 2/10;
+    grid-row: 8/9;
     width: 100%;
     color: #F2D272;
     border: 10px #F2D272;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #F2D272;
-    margin: 100px 0;
+    margin: 10px 0;
 }
 .canyon-img1:hover, .canyon-img2:hover, .canyon-img3:hover {
     opacity: .6;
@@ -334,10 +334,10 @@ main section img {
     color: #0D0D0D;
     line-height: 1.0em;
     padding: 35px;
-    grid-column: 2/6;
-    grid-row: 8/10;
+    grid-column: 2/10;
+    grid-row: 9/10;
     box-shadow: 5px 5px 10px var(--accent2-color);
-    margin: 100px 0;
+    margin: 0px 0;
 }
 .read-more:hover {
     background-color: #123E59;
