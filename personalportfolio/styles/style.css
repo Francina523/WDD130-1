@@ -174,14 +174,14 @@ main section img {
     color: #423f32;
     font-size: 22px;
 }
-.msg h2 {
+.msg1 h2, .msg2 h2 {
     background-color: var(--accent2-color);
     color: #423f32;
     font-family: "Playfair Display", "Noto Serif", Spectral;
     font-size: 22px;
 }
 
-.msg p {
+.msg1 p, .msg2 p {
     color: #423f32; 
     background-color:var(--accent2-color);
     line-height: 2em;
@@ -223,4 +223,263 @@ main section img {
 }
   footer p a:hover {
     text-decoration: underline;
+}
+
+/*  About Me CSS */
+aboutme html,
+
+#profile {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  
+}
+#profile-msg {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#profile-box {
+  width: 100%;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  
+}
+#profile-msg h1, #profile-msg h4 {
+  text-align: center;
+  font-size: 25px;
+  color: #423f32;
+}
+.button-box {
+  text-align: center;
+  font-size: 22px;
+}
+.book {
+  background-color: #468cd3;
+  color: #423f32;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.profile-title {
+  color: #423f32;
+  font-family: "Playfair Display", "Noto Serif", Spectral;
+  font-size: 3em;
+  margin-top: 10px;
+}
+.aboutme-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  background-color: #38662d;
+  padding: 20px; margin: 20px 0; 
+  box-shadow: 0 2px 4px var(--accent2-color)
+}
+main section {
+  text-align: center;
+  font-size: 22px;
+}
+.background2 {
+  width: 100%;
+}
+#myself { 
+  background-color: #38662d; 
+  padding: 20px; 
+  border-radius: 20px; 
+  box-shadow: 0 2px 4px var(--accent2-color); 
+}
+.myself-img1 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  width: 100%;
+  color: #38662d;
+  border: 10px #38662d;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #423f32;
+  margin: 200px 0;
+}
+.myselfmsg1 {
+  background-color: var(--accent2-color);
+  color: #423f32;
+  line-height: 1.0em;
+  font-weight: bold;
+  padding: 35px;
+  grid-column: 5/9;
+  grid-row: 1/3;
+  box-shadow: 5px 5px 10px var(--accent2-color);
+  margin: 200px 0;
+}
+.financial-image  {
+  grid-column: 2/4;
+  grid-row: 4/6;
+  width: 100%;
+  color: #38662d;
+  border: 10px #38662d;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #423f32;
+  margin: 200px 0;
+}
+.myselfmsg2 {
+  background-color: var(--accent2-color);
+  color: #423f32;
+  line-height: 1.0em;
+  font-weight: bold;
+  padding: 35px;
+  grid-column: 5/9;
+  grid-row: 4/6;
+  box-shadow: 5px 5px 10px var(--accent2-color);
+  margin: 200px 0;
+}
+#financial { 
+  background-color: #38662d; 
+  padding: 20px; 
+  border-radius: 20px; 
+  box-shadow: 0 2px 4px var(--accent2-color); 
+}
+#inspiration-quote {
+  margin-top: 40px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #423f32;  
+}
+#inspiration-quote-msg {
+  grid-column: 2/9;
+  grid-row: 7/9;
+}
+#inspiration-quote-box {
+  width: 200px;
+  background-color: #38662d; 
+  padding: 20px; 
+  box-shadow: 0 2px 4px var(--accent2-color);
+  grid-column: 2/9;
+  grid-row: 7/9;
+}
+#inspiration-msg {
+  background-color: var(--accent2-color);
+  color: #423f32;
+  line-height: 1.0em;
+  padding: 35px;
+  grid-column: 3/8;
+  grid-row: 7/9;
+  box-shadow: 5px 5px 10px var(--accent2-color);
+  margin: 200px 0;
+}
+#inspiration-msg h4 {
+  text-align: center;
+  font-size: 25px;
+  color: #423f32;
+}
+.myself-img1:hover, .financial-image:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+main section img {
+  box-sizing: border-box;
+}
+.book:hover {
+  background-color: #38662d;
+  color: #423f32;
+  font-size: 22px;
+}
+.myselfmsg1 h2, .myselfmsg2 h2 {
+  background-color: var(--accent2-color);
+  color: #423f32;
+  font-family: "Playfair Display", "Noto Serif", Spectral;
+  font-size: 22px;
+}
+
+.myselfmsg p, .myselfmsg p {
+  color: #423f32; 
+  background-color:var(--accent2-color);
+  line-height: 2em;
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
+#content {
+  max-width: 1600px;
+}
+#background2 {
+  height: 725px;
+  background-color: #38662d;
+  color: #38662d;
+  font-size: 22px;
+  grid-column: 1/11;
+  grid-row: 2/9;  
+  background-size: 100% 200px; height: 200px;  
+} 
+
+
+
+/*  Contact CSS */
+contact html,
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid var(--accent2-color); /* blue border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #38662d;
+  color: #423f32;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #38662d;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #38662d;
+  padding: 20px;
+}
+
+/*  Resume CSS */
+resume html,
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: var(--accent2-color);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #423f32;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #d9dde1;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #38662d;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
