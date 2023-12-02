@@ -344,13 +344,13 @@ main section img {
     color: #F2D272;
     font-size: 22px;
 }
-.msg h2 {
+.msg1 h2, .msg2 h2, .msg3 h2 {
     background-color: var(--accent2-color);
     color: #0D0D0D;
     font-family: "Rock Salt",Roboto,Manrope;
     font-size: 22px;
 }
-.msg p {
+.msg1 p, msg2 p, msg3 p {
     color: #0D0D0D; 
     background-color:var(--accent2-color);
     line-height: 1.5em;

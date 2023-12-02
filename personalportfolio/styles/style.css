@@ -230,17 +230,23 @@ aboutme html,
 
 #profile {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 3fr;
   
 }
 #profile-msg {
   grid-column: 1/2;
   grid-row: 1/3;
+  margin-top: 35px;
+  text-align: center;
+  margin-left: 50px;
 }
 #profile-box {
   width: 100%;
-  grid-column: 2/4;
-  grid-row: 1/3;
+  grid-column: 3/4;
+  grid-row: 1/4;
+  margin-top: 15px;
+  box-shadow: 5px 5px 10px var(--accent2-color);
+  margin-right: 50px;
   
 }
 #profile-msg h1, #profile-msg h4 {
@@ -269,105 +275,73 @@ aboutme html,
 }
 .aboutme-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 20px;
-  background-color: #38662d;
-  padding: 20px; margin: 20px 0; 
-  box-shadow: 0 2px 4px var(--accent2-color)
+  grid-template-columns: repeat(10fr 1fr);
+  gap: 10px;
 }
 main section {
   text-align: center;
   font-size: 22px;
 }
-.background2 {
-  width: 100%;
-}
-#myself { 
-  background-color: #38662d; 
-  padding: 20px; 
-  border-radius: 20px; 
-  box-shadow: 0 2px 4px var(--accent2-color); 
-}
 .myself-img1 {
-  grid-column: 2/4;
+  grid-column: 2/6;
   grid-row: 1/3;
   width: 100%;
   color: #38662d;
   border: 10px #38662d;
   transition: transform .5s;
   box-shadow: 5px 5px 10px #423f32;
-  margin: 200px 0;
+  margin: 100px 0;
+  margin-right: 80px;
+  margin-left: 50px;
 }
 .myselfmsg1 {
   background-color: var(--accent2-color);
   color: #423f32;
   line-height: 1.0em;
-  font-weight: bold;
   padding: 35px;
-  grid-column: 5/9;
+  grid-column: 7/10;
   grid-row: 1/3;
-  box-shadow: 5px 5px 10px var(--accent2-color);
-  margin: 200px 0;
+  box-shadow: 5px 5px 10px var(--accent1-color);
+  margin: 100px 0;
+  margin-left: 80px;
+  margin-right: 50px;
 }
 .financial-image  {
-  grid-column: 2/4;
+  grid-column: 2/6;
   grid-row: 4/6;
   width: 100%;
   color: #38662d;
   border: 10px #38662d;
   transition: transform .5s;
   box-shadow: 5px 5px 10px #423f32;
-  margin: 200px 0;
+  margin: 100px 0;
+  margin-right: 80px;
+  margin-left: 50px;
 }
 .myselfmsg2 {
   background-color: var(--accent2-color);
   color: #423f32;
   line-height: 1.0em;
-  font-weight: bold;
   padding: 35px;
-  grid-column: 5/9;
+  grid-column: 7/10;
   grid-row: 4/6;
-  box-shadow: 5px 5px 10px var(--accent2-color);
-  margin: 200px 0;
+  box-shadow: 5px 5px 10px var(--accent1-color);
+  margin: 100px 0;
+  margin-left: 80px;
+  margin-right: 50px;
 }
-#financial { 
-  background-color: #38662d; 
-  padding: 20px; 
-  border-radius: 20px; 
-  box-shadow: 0 2px 4px var(--accent2-color); 
-}
-#inspiration-quote {
-  margin-top: 40px; 
-  font-size: 18px; 
-  font-weight: bold; 
-  color: #423f32;  
-}
-#inspiration-quote-msg {
-  grid-column: 2/9;
-  grid-row: 7/9;
-}
-#inspiration-quote-box {
-  width: 200px;
-  background-color: #38662d; 
-  padding: 20px; 
-  box-shadow: 0 2px 4px var(--accent2-color);
-  grid-column: 2/9;
-  grid-row: 7/9;
-}
-#inspiration-msg {
-  background-color: var(--accent2-color);
+.inspiration-msg {
+  background-color: var(--accent1-color);
   color: #423f32;
   line-height: 1.0em;
+  font-weight: bold;
   padding: 35px;
-  grid-column: 3/8;
-  grid-row: 7/9;
+  grid-column: 2/10;
+  grid-row: 9/10;
   box-shadow: 5px 5px 10px var(--accent2-color);
-  margin: 200px 0;
-}
-#inspiration-msg h4 {
-  text-align: center;
-  font-size: 25px;
-  color: #423f32;
+  margin: 20px 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .myself-img1:hover, .financial-image:hover {
   opacity: .6;
@@ -387,7 +361,6 @@ main section img {
   font-family: "Playfair Display", "Noto Serif", Spectral;
   font-size: 22px;
 }
-
 .myselfmsg p, .myselfmsg p {
   color: #423f32; 
   background-color:var(--accent2-color);
@@ -395,7 +368,19 @@ main section img {
   font-size: .8em;
   padding-bottom: 15px;
 }
-
+.inspiration-msg h2 {
+  background-color: var(--accent1-color);
+  color: #423f32;
+  font-family: "Playfair Display", "Noto Serif", Spectral;
+  font-size: 22px;
+}
+.inspiration-msg p {
+  color: #423f32; 
+  background-color:var(--accent1-color);
+  line-height: 2em;
+  font-size: .8em;
+  padding-bottom: 15px;
+}
 #content {
   max-width: 1600px;
 }
@@ -405,11 +390,8 @@ main section img {
   color: #38662d;
   font-size: 22px;
   grid-column: 1/11;
-  grid-row: 2/9;  
-  background-size: 100% 200px; height: 200px;  
+  grid-row: 1/11;    
 } 
-
-
 
 /*  Contact CSS */
 contact html,
@@ -428,11 +410,12 @@ input[type=text], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #38662d;
-  color: #423f32;
+  color: #468cd3;
   padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  border: #468cd3;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
