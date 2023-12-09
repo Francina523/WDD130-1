@@ -121,7 +121,7 @@ body {
   }
   .home-grid {
     display: grid;
-    grid-template-columns: repeat(10 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 5px;
   }
   main section {
@@ -292,7 +292,7 @@ aboutme html,
 }
 .aboutme-grid {
   display: grid;
-  grid-template-columns: repeat(10 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 10px;
 }
 main section {
@@ -500,7 +500,7 @@ resume html,
 }
 .resume-grid {
   display: grid;
-  grid-template-columns: repeat(10 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 10px;
 }
 main section {
